@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Suspense } from "react";
 import RecurringForm from "@/components/RecurringForm";
 
 export default function NewRecurringPage() {
@@ -8,7 +9,9 @@ export default function NewRecurringPage() {
         ← Retour
       </Link>
       <h1 className="font-display text-2xl mt-2 mb-6">Nouvelle règle récurrente</h1>
-      <RecurringForm />
+      <Suspense fallback={null}>
+        <RecurringForm />
+      </Suspense>
     </main>
   );
 }
