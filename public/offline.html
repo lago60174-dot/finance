@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Caisse — hors ligne</title>
+    <style>
+      body {
+        font-family: system-ui, sans-serif;
+        background: #FAFAF7;
+        color: #15171C;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        text-align: center;
+        padding: 24px;
+      }
+      .card { max-width: 320px; }
+      h1 { font-size: 1.25rem; margin-bottom: 8px; }
+      p { color: #15171C99; font-size: 0.9rem; }
+      button {
+        margin-top: 16px;
+        background: #1F4D3D;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        padding: 10px 20px;
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h1>Pas de connexion</h1>
+      <p>
+        Cette page n'a pas encore été visitée hors-ligne. Reconnecte-toi pour
+        accéder à tes données.
+      </p>
+      <button onclick="location.reload()">Réessayer</button>
+    </div>
+  </body>
+</html>
